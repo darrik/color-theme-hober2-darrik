@@ -1,6 +1,7 @@
-;;; color-theme-hober2.el --- Edward O'Connor's second color theme.
+;;; color-theme-hober2-darrik.el --- Edward O'Connor's second color theme.
 
 ;; Copyright (C) 1997 -- 2010 Edward O'Connor <ted@oconnor.cx>
+;; Modifications by Darrik (darrik@brainlag.se)
 
 ;; Author: Edward O'Connor <ted@oconnor.cx>
 ;; Keywords: local
@@ -61,7 +62,7 @@ This is only sometimes accurate."
 (when (< max-specpdl-size 3000)
   (setq max-specpdl-size 3000))
 
-(defun color-theme-hober2 ()
+(defun color-theme-hober2-darrik ()
   "Color theme by Edward O'Connor <ted@oconnor.cx>.
 
 Like my previous theme, I've attempted to make sure things look
@@ -78,7 +79,7 @@ multi-region, nxml, psvn, sgml, sh, show-paren, show-tabs, slime, sldb,
 speedbar, tex, view, viper, w3m, widget, woman"
   (interactive)
   (color-theme-install
-   `(color-theme-hober2
+   `(color-theme-hober2-darrik
      ;; Frame parameters
      ((foreground-color . "light gray")
       (background-color . "black")
@@ -561,8 +562,8 @@ speedbar, tex, view, viper, w3m, widget, woman"
      (js2-variable-name-face ((t (:foreground "IndianRed1"))))
      (js2-warning-face ((t (:background "indian red" :foreground "white"))))
 
-
      (link ((t (:foreground "light sea green" :underline t))))
+     (linum ((t (:foreground "light gray" :background "black"))))
 
      (makefile-shell-face ((t ())))
      (makefile-space-face ((t (:background "IndianRed1" :foreground "light gray"))))
@@ -860,6 +861,6 @@ speedbar, tex, view, viper, w3m, widget, woman"
               (set-face-background 'region "#5f5f87"))))
 
 
-(provide 'color-theme-hober2)
+(provide 'color-theme-hober2-darrik)
 
-;;; color-theme-hober2.el ends here
+;;; color-theme-hober2-darrik.el ends here
